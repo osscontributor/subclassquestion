@@ -16,20 +16,8 @@ class Insertion_orders_persons {
     static mapping = {
         version false
         id column: 'insertion_order_person_id'
-        discriminator column: "type"
     }
 
 }
 
-class Insertion_orders_traffickers extends Insertion_orders_persons {
-    static mapping ={
-        discriminator value: "Traffickers"
-    }
-}
-
-class Insertion_orders_salespersons extends Insertion_orders_persons {
-    static mapping ={
-        discriminator value: "Salesperson"
-    }
-}
 
